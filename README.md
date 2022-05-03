@@ -1,6 +1,6 @@
 # sprint_project
  
-Hi Guys, We have created(tried) to create a FTP Client-Server Application with TCP
+Hi Guys, We have created to create a FTP Client-Server Application with TCP
 
 # Current Functionalities of the Application are:
 	* Download
@@ -8,16 +8,16 @@ Hi Guys, We have created(tried) to create a FTP Client-Server Application with T
 	* List of Files
 	
 ## Download Function:
-	* Uses **GET** command
-	* Ability to send file from server to client
+	> Uses _GET_ command
+	> Ability to send file from server to client
 
 ## Upload Function:
-	* Uses **PUT** command
-	* Ability to send required folder from client to server
+	> Uses _PUT_ command
+	> Ability to send required folder from client to server
 
 ## List of Files:
-	* Uses **LIST** command
-	* Lists the files available in the server directory
+	> Uses _LIST_ command
+	> Lists the files available in the server directory
 	
 
 ![GitHub Dark](https://github.com/github-dark.png#gh-light-mode-only)
