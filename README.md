@@ -8,15 +8,15 @@ Hi Guys, We have created to create a FTP Client-Server Application with TCP
 	* List of Files
 	
 ## Download Function:
-	> Uses _GET_ command
+	> Uses ** GET ** command
 	> Ability to send file from server to client
 
 ## Upload Function:
-	> Uses _PUT_ command
+	> Uses ** PUT ** command
 	> Ability to send required folder from client to server
 
 ## List of Files:
-	> Uses _LIST_ command
+	> Uses ** LIST ** command
 	> Lists the files available in the server directory
 	
 
