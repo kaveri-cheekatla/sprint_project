@@ -1,18 +1,25 @@
-#include <stdio.h>
-#include<string.h>
-#include<stdlib.h>
-#include<unistd.h>
+/* FTP Client Program which send the commands to the server program to perform various functions */
+/************************************************************************************
+                         Header file
+************************************************************************************/			 
+#include <stdio.h>      //includes input output related functions 
+#include <string.h>     //include all functions of string handling
+#include<stdlib.h>      //includes functions involving memory allocation, utility functions for type conversion
+#include<unistd.h>      //provides access to the posix operation system api
 
-#include<sys/ioctl.h>
-#include<arpa/inet.h>
-#include<net/if_arp.h>
-#include<sys/stat.h>
-#include<fcntl.h>
-#include<sys/types.h>
-#include<sys/socket.h>
-#include<netinet/in.h>
-#include<netdb.h>
+#include <sys/types.h>  //includes typedef symbols and structures 
+#include <sys/socket.h> //includes sockaddr structure
+#include <netinet/in.h> //includes the internet address family
+#include <netdb.h>      //defines the netent structure
+#include <fcntl.h>      //defines the flock structure describing a file lock
 
+#include<sys/ioctl.h>   //includes input output definitions and structures
+#include<arpa/inet.h>   //defines internet operation
+#include<net/if_arp.h>  //implementation of tcp/ip protocol for linuxOSes
+#include<sys/stat.h>    //defines structure of data
+/****************************************************************************************
+                         Macros
+****************************************************************************************/			 
 #define FNAME file1
 #define PORT 8021
 #define BUFSIZE 128

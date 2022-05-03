@@ -1,16 +1,23 @@
-#include <stdio.h>
-#include <string.h>
-#include<stdlib.h>
-#include<unistd.h>
+/*FTP Server Program which handles the requests from the client*/
+/**********************************************************************************************
+                        Header files
+*********************************************************************************************/			
 
-#include <sys/types.h>
-#include <sys/socket.h>
-#include <netinet/in.h>
-#include <netdb.h>
-#include <fcntl.h>
-#include <dirent.h>
-#include<sys/stat.h>
+#include <stdio.h>      //includes input output related functions 
+#include <string.h>     //include all functions of string handling
+#include<stdlib.h>      //includes functions involving memory allocation, utility functions for type conversion
+#include<unistd.h>      //provides access to the posix operation system api
 
+#include <sys/types.h>  //includes typedef symbols and structures 
+#include <sys/socket.h> //includes sockaddr structure
+#include <netinet/in.h> //includes the internet address family
+#include <netdb.h>      //defines the netent structure
+#include <fcntl.h>      //defines the flock structure describing a file lock
+#include <dirent.h>     //defines the following datatype
+#include<sys/stat.h>    //includes file attributes
+/********************************************************************************************************
+                         Macros
+*******************************************************************************************************/			 
 #define FNAME file1
 #define PORT 8021
 #define BUFSIZE 128
